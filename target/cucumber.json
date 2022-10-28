@@ -1,0 +1,237 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 894000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepdefs.SDLoginStepDef.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 182000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter the correct username and password",
+            "match": {
+              "location": "stepdefs.SDLoginStepDef.i_enter_the_correct_username_and_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the Login Button",
+            "match": {
+              "location": "stepdefs.SDLoginStepDef.i_click_on_the_Login_Button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-28T04:56:27.484Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1929000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.SDHooks.SetUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "This scenario is to define the login happy path",
+        "description": "",
+        "id": "homepage-scenario-adding-a-product-to-the-cart;this-scenario-is-to-define-the-login-happy-path",
+        "after": [
+          {
+            "result": {
+              "duration": 88000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.SDHooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 169000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click Add To Cart on product \"Sauce Labs Backpack\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefs.SDLoginStepDef.i_click_Add_To_Cart_on_product(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Basket value should be \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefs.SDLoginStepDef.basket_value_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Homepage Scenario adding a product to the cart",
+    "description": "",
+    "id": "homepage-scenario-adding-a-product-to-the-cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Homepage.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 767000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepdefs.SDLoginStepDef.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-28T04:56:30.931Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1233000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.SDHooks.SetUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "This scenario is to define the login happy path",
+        "description": "",
+        "id": "login-feature-scenario;this-scenario-is-to-define-the-login-happy-path",
+        "after": [
+          {
+            "result": {
+              "duration": 64000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.SDHooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter the correct username and password",
+            "match": {
+              "location": "stepdefs.SDLoginStepDef.i_enter_the_correct_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 102000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on the Login Button",
+            "match": {
+              "location": "stepdefs.SDLoginStepDef.i_click_on_the_Login_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should land on the home page",
+            "match": {
+              "location": "stepdefs.SDLoginStepDef.i_should_land_on_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature Scenario",
+    "description": "",
+    "id": "login-feature-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/SDLogin.feature",
+    "tags": []
+  }
+]
